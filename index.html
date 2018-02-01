@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- 
+Создайте HTML-страницу с резюме:
+
+Требования:
+
+1. Указана кодировка страницы "UTF-8".
+2. Подключен файл со стилями при помощи link внутри head
+3. Указан заголовок (title).
+4. Внутри body три div-элемента с разными id: #header, #main и #footer.
+      Внутри #header три элемента: h1, h3 и абзац p.
+        1. В заголовке первого уровня — имя и фамилия
+        2. В заголовке третьего уровня — специальность
+        3. В параграфе — две ссылки:
+            email-адрес (используйте формат ссылки href="mailto:xx@yy.zz")
+            адрес вашего сайта или блога (если у вас их нет, то можете дать ссылку на профиль в соц. сети или Моём Круге)
+      Внутри #main короткий вводный текст (опционально) и несколько секций: "Опыт работы", "Образование", "Другие навыки и увлечения". Каждая секция начинается с заголовка второго уровня, и содержит несколько пунктов. В каждом пункте — список. См. пример на скриншоте.
+-->
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Curriculum Vitae</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <div id="header">
+    <h1>Alexey Primadonin</h1>
+    <h3>Web-developer</h3>
+    <p>
+      <a href="mailto:alprim@grail.com">alprim@grail.com</a>,
+      <a href="https://github.com/alprim">github.com/alprim</a>
+    </p>
+  </div>
+  <div id="main">
+    <p class="descr">Я увлекаюсь веб-дизайном со старших классов школы. Начал с мини-сайтов для себя и друзей, потом для местных фирм и организаций.
+      После курсов на Хекслете начал работу веб-разработчиком. Пишу на JS (ES6), люблю функциональное програмирование. Умею
+      работать с SQL, HTTP, Git b Ansible. Пишу тесты</p>
+    <p>Готов к удаленной работе и релокации.</p>
+
+    <h2>Experience</h2>
+    <div>
+      <h3>Microsoft Россия</h3>
+      <div class="pos">Programmer (traineeship),
+        <span class="term">April 2016 - November 2016</span>
+        <ul>
+          <li>Teamwork using C#</li>
+          <li>Web development for the project JDX</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3>Wine Banya LCC</h3>
+      <div class="pos">Web design,
+        <span class="term">January 2015 - April 2016</span>
+        <ul>
+          <li>Front-end development and design</li>
+          <li>Wordpress themes development</li>
+          <li>Web site support</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Education</h2>
+    <div>
+      <h3>Patrice Lumumbu University</h3>
+      <div class="pos">Bachelor of Computer Science,
+        <span class="term">2012 - 2016</span>
+      </div>
+    </div>
+    <div>
+      <h3>Hexlet</h3>
+      <div>Programming courses, JS Backend/Frontend,
+        <span class="term">2015 - 2017</span>
+      </div>
+    </div>
+
+    <h2>Other interests</h2>
+    <div>
+      <ul>
+        <li>Fundamental of design and typography</li>
+        <li>Love playing guitar</li>
+        <li>Field hockey </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="footer">
+    <div>Alexey Primadonin</div>
+    <div class="address">Polevaya str. 12, Astrakhan, Russia, +78881270001,
+      <a href="mailto:alprim@grail.com">alprim@grail.com</a>,
+    </div>
+  </div>
+
+
+</body>
+
+</html>
